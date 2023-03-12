@@ -1,0 +1,24 @@
+/* .bccontainer{
+    width: 100vw;
+    height: 80vh;
+} */
+
+.background {
+    background-size: cover;
+    max-height: 100%;
+    height: 60vh;
+    width: 99vw;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.search{
+    border:solid pink;
+    text-align: center;
+    padding-top: 8%;
+    height: 70%;
+}
+.bar{
+    background-color: aliceblue;
+    opacity: 50%;
+border-radius: 5%;}

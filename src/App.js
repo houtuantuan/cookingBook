@@ -1,23 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+import Home from "./components/Home";
+import Navbar from "./components/Navbar"
+import Footer from "./components/Footer"
+import Recipe from "./components/Recipe"
+import { Routes, Route } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { createClient } from "contentful";
+
+
+
 
 function App() {
+  const [recipes, setRecipes] = useState([]);
+  const client = createClient({
+    space: "g7wwoqw7k7vb",
+    accessToken: "6vacSQq_qoG6HEtSss7ZTCoHm74Sr8yTUUEbOK6PXDY",
+  });
+
+  const getData = async () => {
+    const entryItems = await client.getEntries();
+
+    console.log("ENTRIES: ", entryItems.items);
+    setRecipes(entryItems.items);
+  };
+
+  useEffect(() => {
+    getData();
+  }, []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home
+          recipes={recipes}
+        />} />
+        <Route path="/:index" element={<Recipe 
+        recipes={recipes}/>} />
+
+      </Routes>
+      <Footer />
     </div>
   );
 }
