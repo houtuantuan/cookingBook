@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/houtuantuan/cookingBook/static/css/main.e88139d1.css",
-    "main.js": "/houtuantuan/cookingBook/static/js/main.36614df4.js",
+    "main.js": "/houtuantuan/cookingBook/static/js/main.60712f81.js",
     "static/media/logo.png": "/houtuantuan/cookingBook/static/media/logo.382bf5b5c33da6e497d9.png",
     "static/media/backgroundHeader.jpg": "/houtuantuan/cookingBook/static/media/backgroundHeader.21ef013985ce585bf703.jpg",
     "static/media/roboto-all-500-normal.woff": "/houtuantuan/cookingBook/static/media/roboto-all-500-normal.0ab669b7a0d19b178f57.woff",
@@ -38,10 +38,10 @@
     "static/media/roboto-greek-ext-700-normal.woff2": "/houtuantuan/cookingBook/static/media/roboto-greek-ext-700-normal.bd9854c751441ccc1a70.woff2",
     "index.html": "/houtuantuan/cookingBook/index.html",
     "main.e88139d1.css.map": "/houtuantuan/cookingBook/static/css/main.e88139d1.css.map",
-    "main.36614df4.js.map": "/houtuantuan/cookingBook/static/js/main.36614df4.js.map"
+    "main.60712f81.js.map": "/houtuantuan/cookingBook/static/js/main.60712f81.js.map"
   },
   "entrypoints": [
     "static/css/main.e88139d1.css",
-    "static/js/main.36614df4.js"
+    "static/js/main.60712f81.js"
   ]
 }
