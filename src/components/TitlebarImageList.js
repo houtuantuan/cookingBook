@@ -53,8 +53,14 @@ export default function TitlebarImageList ({ recipes }) {
                     />
                   </Link>
                   <CardContent>
-                    <Link to={`/${index}`} style={{textDecoration: 'none'}}>
-                      <Typography gutterBottom variant='h5' component='div' >
+                    <Link to={`/${index}`} style={{ textDecoration: 'none' }}>
+                      <Typography
+                        sx={{ fontWeight: 'bold' }}
+                        gutterBottom
+                        variant='h5'
+                        component='div'
+                        color='success.main'
+                      >
                         {rec.fields.rezeptName}
                       </Typography>
                     </Link>
@@ -66,7 +72,7 @@ export default function TitlebarImageList ({ recipes }) {
 
                 <CardActions>
                   <Link to={`/${index}`}>
-                    <Button size='small' color='primary'>
+                    <Button size='small' color='success'>
                       go for it
                     </Button>
                   </Link>

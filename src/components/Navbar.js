@@ -59,7 +59,7 @@ function ResponsiveAppBar() {
 
     return (
         <ThemeProvider theme={theme}>
-        <AppBar position="static">
+        <AppBar position="fixed">
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
                 <Avatar alt="Logo" src={logo} />
