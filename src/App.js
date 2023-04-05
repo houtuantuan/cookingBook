@@ -31,10 +31,10 @@ function App() {
     <div className="App">
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home
+        <Route path="/cookingBook" element={<Home
           recipes={recipes}
         />} />
-        <Route path="/:index" element={<Recipe 
+        <Route path="/cookingBook/:index" element={<Recipe 
         recipes={recipes}/>} />
 
       </Routes>

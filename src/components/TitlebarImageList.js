@@ -44,7 +44,7 @@ export default function TitlebarImageList ({ recipes }) {
             >
               <Card key={index} sx={{ maxWidth: 370 }}>
                 <CardActionArea>
-                  <Link to={`/${index}`}>
+                  <Link to={`/cookingBook/${index}`}>
                     <CardMedia
                       component='img'
                       height='440'
@@ -53,7 +53,7 @@ export default function TitlebarImageList ({ recipes }) {
                     />
                   </Link>
                   <CardContent>
-                    <Link to={`/${index}`} style={{ textDecoration: 'none' }}>
+                    <Link to={`/cookingBook/${index}`} style={{ textDecoration: 'none' }}>
                       <Typography
                         sx={{ fontWeight: 'bold' }}
                         gutterBottom
@@ -71,7 +71,7 @@ export default function TitlebarImageList ({ recipes }) {
                 </CardActionArea>
 
                 <CardActions>
-                  <Link to={`/${index}`}>
+                  <Link to={`/cookingBook/${index}`}>
                     <Button size='small' color='success'>
                       go for it
                     </Button>

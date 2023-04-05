@@ -205,7 +205,7 @@ export default function Recipe ({ recipes }) {
                 <Box>
                   {recommendation && recommendation.fields.beschreibung}
                 </Box>
-                <Link to={`/Kochbuch/${randomIndex}`}>
+                <Link to={`/cookingBook/${randomIndex}`}>
                   <Button variant='primary'>Go </Button>
                 </Link>
               </Box>
